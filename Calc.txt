@@ -1,0 +1,185 @@
+5 kort
+------
+
+Royal	1 in 649740
+StFl	1 in 72193,333333333333333333333333333
+4oaK	1 in 4165
+Fu	1 in 694,16666666666666666666666666667
+Fl	1 in 508,80187940485512920908379013312
+St	1 in 254,8
+3oaK	1 in 47,329545454545454545454545454545
+2P	1 in 21,035353535353535353535353535354
+P	1 in 2,3664772727272727272727272727273
+HC	1 in 1,9953014878621769772905246671887
+HC = High card.
+
+
+7 kort
+------
+
+Royal	1 in 
+StFl	1 in 
+4oaK	1 in 
+Fu	1 in 
+Fl	1 in 
+St	1 in 
+3oaK	1 in 
+2P	1 in 
+P	1 in 
+HC	1 in 
+HC = High card.
+
+
+TODO
+----
+
+1. Learn that new-found rule where the dealer places a card
+   in the middle of the table (chips can be placed on it as
+   well). I guess it's when he has too few cards left?
+2. Fix the "broken lines" that occur when the player places
+   chips infront of his cards so that the top of his cards
+   are partly covered by the corresponding call/bet digit.
+3. Make sure that two tables in a row are the same before
+   using them.
+4. Make sure that no game is reset just because something
+   unexpected happened.
+
+
+
+Statistik, 5 kort
+-----------------
+
+Antal olika händer man kan ha med 5 kort = 2598960 (=52*51*50*49*48 / 5!).
+
+Antal olika 5-kortshänder som innehåller fyrtal = 624 (=13*48).
+Chansen att få fyrtal på 5 kort = 624/2598960,
+vilket är lika med 1 på 2598960/624 = 1 på 4165.
+
+Antal olika 5-kortshänder som innehåller royal flush = 4.
+Chansen att få royal flush på 5 kort = 4/2598960,
+vilket är lika med 1 på 2598960/4 = 1 på 649740.
+
+
+
+Statistik, 7 kort
+-----------------
+
+Antal olika händer man kan ha med 7 kort = 133784560 (=52*51*50*49*48*47*46 / 7!).
+
+Antal olika 7-kortshänder som innehåller fyrtal = 224848 (=13*48*47*46 / 3!).
+Chansen att få fyrtal på 7 kort = 224848/133784560,
+vilket är lika med 1 på 133784560/224848 = 1 på 595.
+
+Antal olika 7-kortshänder som innehåller royal flush = 4324 (=4*47*46 / 2!).
+Chansen att få royal flush på 7 kort = 4324/133784560,
+vilket är lika med 1 på 133784560/4324 = 1 på 30940.
+
+Antal olika 7-kortshänder som innehåller 5 specifika kort = 1081 (=1*47*46 / 2!).
+Chansen att få denna specifika hand = 1081/133784560,
+vilket är lika med 1 på 133784560/1081 = 1 på 123760.
+
+Antal olika 7-kortshänder som innehåller stege i färg = 43240 (=40*47*46 / 2!).
+Chansen att få denna specifika hand = 43240/133784560,
+vilket är lika med 1 på 133784560/43240 = 1 på 3094.
+
+Antal olika 7-kortshänder som innehåller kåk = 3790800 (=4*13*6*12 * 45*45 / 2!).
+Chansen att få denna specifika hand = 3790800/133784560,
+vilket är lika med 1 på 133784560/3790800 = 1 på 35,291906721536351165980795610425.
+
+Antal olika 7-kortshänder som innehåller färg = 5171850 (=5108*45*45 / 2!).
+Chansen att få denna specifika hand = 5171850/133784560,
+vilket är lika med 1 på 133784560/5171850 = 1 på 25,867834527296808685480050658855.
+
+Antal olika 7-kortshänder som innehåller stege = 10327500 (=10200*45*45 / 2!).
+Chansen att få denna specifika hand = 10327500/133784560,
+vilket är lika med 1 på 133784560/10327500 = 1 på 12,95420576131687242798353909465.
+
+Antal olika 7-kortshänder som innehåller triss = 6589440 (=4*13*4*12*4*11*4*10*4*9 / 4!).
+Chansen att få denna specifika hand = 6589440/133784560,
+vilket är lika med 1 på 133784560/6589440 = 1 på 20,302872474747474747474747474747.
+
+Antal olika 7-kortshänder som innehåller tvåpar = 59304960 (=6*13*6*12*4*11*4*10*4*9 / 3!).
+Chansen att få denna specifika hand = 59304960/133784560,
+vilket är lika med 1 på 133784560/59304960 = 1 på 2,2558747194163860830527497194164.
+
+Antal olika 7-kortshänder som innehåller par = 9884160 (=6*13*4*12*4*11*4*10*4*9 / 4!).
+Chansen att få denna specifika hand = 9884160/133784560,
+vilket är lika med 1 på 133784560/9884160 = 1 på 13,535248316498316498316498316498.
+
+
+
+---------------------------------------------
+
+
+5 cards.
+--------
+
+
+a = color combinations.
+b = value combinations.
+c = ways to choose leftover cards.
+d = ways to choose leftover card values.
+e = ways to choose leftover card types.
+
+
+Ways to draw 5 cards from 52: 2598960.
+
+
+Royal Flush: a*b (C(4,1)C(1,1)) = 4;  P = 1/649740 ("1 to 649739 in favor")  
+
+Straight Flush: a*b (C(4,1)C(9,1)) = 36;  P = 3/216580 ("3 to 216577")  
+
+4 of a Kind:  b*c (C(13,1)C(48,1)) = 624;  P = 1/4165 ("1 to 4164")  
+
+Full House: a1*b1*a2*b2 (C(13,1)C(4,3)C(12,1)C(4,2)) = 3744;  P = 6/4165 ("6 to 4159")  
+
+Flush: a*b (C(4,1) [C(13,5) - 10]) = 5108;  P = 1277/649740 ("1277 to 648463")  
+
+Straight: b*a (C(10,1) ((4^5)-4)) = 10200;  P = 5/1274 ("5 to 1269") 
+
+3 of a Kind: b*a*d*e (C(13,1)C(4,3)C(12,2) 4^2) = 54912;  P = 88/4165 ("88 to 4077") 
+
+Two Pairs: b*(a^2)*c (C(13,2)(C(4,2)^2)C(44,1)) = 123552;  P = 198/4165 ("198 to 3967") 
+
+Pair: b*a*d*e (C(13,1)C(4,2)C(12,3) 4^3) = 1098240;  P = 352/833 ("352 to 481") 
+
+High Card: b*a (C(13,5)-10) ((4^5)-4) = 1302540;  P = 1277/2548 ("1277 to 1271") 
+
+
+
+---------------------------------------------
+
+
+7 cards.
+--------
+
+
+a = color combinations.
+b = value combinations.
+c = ways to choose leftover cards.
+d = ways to choose leftover card values.
+e = ways to choose leftover card types.
+
+
+Ways to draw 7 cards from 52: 133784560.
+
+
+Royal Flush: a*b*c (C(4,1)C(1,1) C(47,2)) = 4324;  P = 4324/133784560 ("1 in 30940")
+
+Straight Flush: a*b*c (C(4,1)C(9,1) C(47,2)) = 38916;  P = 38916/133784560 ("1 in 3437,7777777777777777777777777778")
+
+4 of a Kind:  b*c (C(13,1) C(48,3)) = 224848;  P = 224848/133784560 ("1 in 595")
+
+Full House: a1*b1*a2*b2 (C(13,1)C(4,3)C(12,1)C(4,2) C(11,1)*4) = 164736;  P = 164736/133784560 ("1 in 812,1148989898989898989898989899")
+
+****************** Flush: a*b (C(4,1){[C(13,5)-10] -C(10,1)}C(47,2)) ??? = 5478508/133784560 ("1 in 24,419889502762430939226519337017)
+
+Straight: b*a (C(10,1)((4^5)-4)) = 10200;  P = 5/1274 ("5 to 1269")
+
+3 of a Kind: b*a*d*e (C(13,1)C(4,3)C(12,2) 4^2) = 54912;  P = 88/4165 ("88 to 4077")
+
+Two Pairs: b*(a^2)*c (C(13,2)(C(4,2)^2)C(44,1)) = 123552;  P = 198/4165 ("198 to 3967")
+
+Pair: b*a*d*e (C(13,1)C(4,2)C(12,3) 4^3) = 1098240;  P = 352/833 ("352 to 481")
+
+High Card: b*a (C(13,5)-10) ((4^5)-4) = 1302540;  P = 1277/2548 ("1277 to 1271")
